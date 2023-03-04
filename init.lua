@@ -1,2 +1,2 @@
 require("hamda")
-print("hello")
+
