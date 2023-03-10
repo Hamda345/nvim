@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme terafox')
 	  end
   })
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+ use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
   use('nvim-treesitter/playground')
 
@@ -52,4 +52,6 @@ return require('packer').startup(function(use)
   use ('nvim-tree/nvim-web-devicons')
   use ('glepnir/dashboard-nvim')
   use ('brenoprata10/nvim-highlight-colors')
+  use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
+  use {'itchyny/lightline.vim'}
 end)
