@@ -9,14 +9,15 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use({
-	  'EdenEast/nightfox.nvim',
-	  as = 'nightfox',
-	  config = function()
-		  vim.cmd('colorscheme terafox')
-	  end
-  })
- use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+ -- use({
+	 -- 'EdenEast/nightfox.nvim',
+	--  as = 'nightfox',
+	 -- config = function()
+		--  vim.cmd('colorscheme terafox')
+	 -- end
+ -- })
+ use { "catppuccin/nvim", as = "catppuccin" }
+  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
   use('nvim-treesitter/playground')
 
@@ -50,8 +51,11 @@ return require('packer').startup(function(use)
   }
   use('tmsvg/pear-tree')
   use ('nvim-tree/nvim-web-devicons')
-  use ('glepnir/dashboard-nvim')
-  use ('brenoprata10/nvim-highlight-colors')
-  use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
-  use {'itchyny/lightline.vim'}
+  use("glepnir/dashboard-nvim")
+  use 'github/copilot.vim'
+  use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+}
+    use ('norcalli/nvim-colorizer.lua')
 end)
