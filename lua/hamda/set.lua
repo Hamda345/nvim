@@ -24,7 +24,7 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 20
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
@@ -32,3 +32,7 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+--vim.opt.foldmethod=expr
+--vim.set.foldexpr=nvim_treesitter#foldexpr()
+--vim.opt.foldlevel=99
+-- vim.keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })

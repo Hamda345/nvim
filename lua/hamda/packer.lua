@@ -52,10 +52,18 @@ return require('packer').startup(function(use)
   use('tmsvg/pear-tree')
   use ('nvim-tree/nvim-web-devicons')
   use("glepnir/dashboard-nvim")
-  use 'github/copilot.vim'
+  -- use 'github/copilot.vim'
   use {
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 }
     use ('norcalli/nvim-colorizer.lua')
+    use ('ThePrimeagen/vim-be-good')
+    use ('terrortylor/nvim-comment')
+    use('neoclide/coc.nvim')
+    use('yaegassy/coc-blade')
+    use('jose-elias-alvarez/null-ls.nvim')
+    use('MunifTanjim/prettier.nvim')
+    use ('voldikss/vim-floaterm')
+    use ('sbdchd/neoformat')
 end)
