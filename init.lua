@@ -17,3 +17,7 @@ end
 
 require "lazy_setup"
 require "polish"
+vim.api.nvim_set_keymap("n", "<Left>", "h", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Down>", "j", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Up>", "k", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Right>", "l", { noremap = true, silent = true })
